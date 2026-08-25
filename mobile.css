@@ -1,0 +1,50 @@
+/* Mobile-first afwerking: ontworpen voor één hand, korte leesmomenten en kleine schermen. */
+@media(max-width:700px){
+  body{font-size:14px;overflow-x:hidden}
+  .site-header{align-items:flex-start;background:linear-gradient(180deg,rgba(12,12,11,.76),transparent);gap:.75rem;padding:1.1rem 1.25rem 2.5rem}
+  .site-header nav{bottom:.75rem;display:flex;gap:1rem;left:1.25rem;position:absolute}
+  .site-header nav a{color:#c9c7c0;font-size:.56rem}
+  .header-contact{font-size:.56rem;white-space:nowrap}
+  .hero{min-height:44rem}
+  .hero-content{justify-content:flex-end;min-height:44rem;padding:8rem 1.25rem 4.15rem}
+  .hero .eyebrow{font-size:8.5px;max-width:20rem}
+  .hero h1{font-size:clamp(2.7rem,11.2vw,4rem);line-height:.88;margin-top:1.4rem}
+  .hero-bottom{gap:1.35rem;margin-top:2rem}
+  .hero-bottom>p{font-size:.82rem;max-width:22rem}
+  .hero-bottom p span{margin-top:.55rem}
+  .hero-actions{align-items:stretch;gap:.9rem;width:100%}
+  .hero-actions .button{justify-content:space-between;width:100%}
+  .text-link{align-self:flex-start;font-size:.62rem}
+  .scroll-note{display:none}
+  .hero-media>p{bottom:3rem;font-size:8px;opacity:.65;right:1.25rem}
+  .hero-ticker{padding:.45rem 0}
+  .section-pad{padding:4.7rem 1.25rem}
+  .eyebrow{font-size:8.5px}
+  .section-intro h2,.work-heading h2,.about h2{font-size:2.25rem;line-height:.94;margin-top:1rem}
+  .services-grid{border-bottom:1px solid #b8b6b0;gap:0;margin-top:2.75rem}
+  .service-card{min-height:14.5rem;padding:.9rem}
+  .service-card h3{font-size:1.45rem;margin-top:2.1rem}
+  .service-card p{bottom:1rem;font-size:.66rem;left:.9rem;line-height:1.45;max-width:8.6rem}
+  .services-statement{font-size:1.5rem;line-height:1.05;margin-top:4.5rem;max-width:19rem}
+  .approach{padding-bottom:4.2rem;padding-top:4.2rem}
+  .approach-number{margin-bottom:2.25rem}
+  .approach h2{font-size:2.65rem;line-height:.9}
+  .approach-text{font-size:.82rem;margin-top:2.5rem}
+  .approach-text .lead{font-size:1rem}
+  .approach-strip{margin:3.5rem -1.25rem 0;padding:.8rem 1.25rem}
+  .work-heading>p:last-child{font-size:.82rem;line-height:1.55;margin-top:1.4rem}
+  .case-grid{margin-top:3rem}
+  .case{margin-bottom:2.5rem}
+  .case-wide .case-visual{aspect-ratio:1/1}.case:not(.case-wide) .case-visual{aspect-ratio:1/.94}
+  .case-info{padding:.85rem 0}.case-info h3{font-size:1.7rem}.case-tag{font-size:8.5px;margin-bottom:.55rem}.case-info>p{display:none}
+  .play{height:2.8rem;width:2.8rem}
+  .case-rationale{margin-top:3rem;padding:2.7rem 1.25rem}
+  .case-rationale h3{font-size:2.15rem}.case-rationale dd{font-size:.77rem}
+  .about{padding-top:6.5rem}.portrait-placeholder{aspect-ratio:1/1.08;margin:0 -1.25rem;max-width:none}.portrait-placeholder span{left:1.25rem}
+  .about-content{padding-top:3rem}.about-content p{font-size:.83rem;line-height:1.6}.about-content p:first-of-type{margin-top:2rem}
+  .about blockquote{font-size:1.65rem;line-height:1.07;margin-top:3.5rem}
+  .contact{padding:1.4rem 1.25rem 2rem}.contact h2{font-size:2.75rem;line-height:.88;margin:4.25rem 0}.contact-lead{font-size:1rem}.email-link{font-size:1.25rem;margin-top:2rem}
+  .contact-grid form{margin-top:3.25rem}.contact-grid form .button{justify-content:space-between;width:100%}
+  input,textarea{font-size:16px} /* voorkomt ongewenste iOS-zoom bij formulierinvoer */
+  footer{margin-top:4rem}
+}
