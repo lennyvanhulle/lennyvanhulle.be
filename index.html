@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="human.css" />
     <link rel="stylesheet" href="clarity.css" />
     <link rel="stylesheet" href="spacing.css" />
+    <link rel="stylesheet" href="component-button.css" />
+    <link rel="stylesheet" href="component-button-fix.css" />
+    <link rel="stylesheet" href="letterfix.css" />
+    <link rel="stylesheet" href="hero-copy-position.css" />
+    <link rel="stylesheet" href="hover-video.css" />
+    <link rel="stylesheet" href="hover-video-fix.css" />
+    <link rel="stylesheet" href="services-copy.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Naar inhoud</a>
@@ -27,7 +34,7 @@
         <a href="#aanpak">Aanpak</a>
         <a href="#over">Over mij</a>
       </nav>
-      <a class="header-contact" href="#contact">Start een project <span aria-hidden="true">↗</span></a>
+      <a class="header-contact get-started-button" href="#contact"><span>Start een project</span><i aria-hidden="true">›</i></a>
     </header>
 
     <main id="main">
@@ -39,24 +46,23 @@
         </div>
         <div class="hero-content">
           <p class="eyebrow">VIDEOGRAAF · DRONEPILOOT · CREATIEF DENKER</p>
-          <h1 id="hero-title">HOE ZET IK<br />JOUW BEDRIJF<br /><em>IN DE KIJKER?</em></h1>
+          <h1 id="hero-title">HOE ZE<span class="hero-title-t">T</span> IK<br />JOUW BEDRIJF<br /><em>IN DE KIJKER?</em></h1>
           <div class="hero-bottom">
-            <p>En hoe zorgen we ervoor dat mensen niet gewoon verder scrollen?</p>
-            <div class="hero-actions"><a class="button button-light" href="#werk">Bekijk mijn werk <span>↓</span></a><a class="text-link" href="#contact">Vertel mij over je project <span>↗</span></a></div>
+            <p>En hoe zorgen we ervoor dat mensen niet gewoon verder scrollen? Ik neem je gerust mee.</p>
+            <div class="hero-actions"><a class="button button-light get-started-button" href="#werk"><span>Bekijk mijn werk</span><i aria-hidden="true">›</i></a><a class="text-link" href="#contact">Vertel mij over je project <span>↗</span></a></div>
           </div>
         </div>
-        <a class="scroll-note" href="#maken">Scroll om te ontdekken <span>↓</span></a>
       </section>
 
       <section class="services section-pad" id="maken" aria-labelledby="services-title">
         <div class="section-intro reveal"><p class="eyebrow">01 / WAT IK MAAK</p><h2 id="services-title">WAT KAN IK VOOR<br />JOUW MERK MAKEN?</h2></div>
         <div class="services-grid">
           <article class="service-card reveal"><span>01</span><h3>Social<br />content</h3><p>Korte video's die gemaakt zijn om aandacht te pakken en mensen te laten kijken.</p><i>↗</i></article>
-          <article class="service-card reveal"><span>02</span><h3>Brand &amp;<br />commercial</h3><p>Professionele video-content die jouw merk, product of bedrijf sterk positioneert.</p><i>↗</i></article>
+          <article class="service-card service-card--video reveal"><video class="hover-video" muted playsinline preload="metadata" aria-label="Preview van Brand & commercial-video"><source src="assets/brand-commercial-noah.mp4" type="video/mp4" /></video><span>02</span><h3>Brand &amp;<br />commercial</h3><p>Professionele video-content die jouw merk, product of bedrijf sterk positioneert.</p><i>↗</i></article>
           <article class="service-card reveal"><span>03</span><h3>Drone</h3><p>Cinematische luchtbeelden die een project vanuit een ander perspectief laten zien.</p><i>↗</i></article>
           <article class="service-card reveal"><span>04</span><h3>Concept &amp;<br />strategie</h3><p>Niet zomaar filmen. Eerst bepalen wat we willen vertellen, voor wie en waarom.</p><i>↗</i></article>
         </div>
-        <p class="services-statement reveal">Van spontaan en energiek tot strak en professioneel. <em>De stijl wordt bepaald door jouw merk, doelgroep en doel — niet door een standaardformat.</em></p>
+        <p class="services-statement reveal">Van spontaan en authentiek tot strak en professioneel.<em class="services-statement-accent">We kiezen samen de stijl die het best bij jouw merk, doelgroep en doel past, niet door een standaardformaat.</em></p>
       </section>
 
       <section class="approach section-pad" id="aanpak" aria-labelledby="approach-title">

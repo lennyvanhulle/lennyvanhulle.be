@@ -28,6 +28,17 @@ const updateHeader = () => {
 window.addEventListener('scroll', updateHeader, { passive: true });
 updateHeader();
 
+document.querySelectorAll('.hover-video').forEach((video) => {
+  video.addEventListener('loadedmetadata', () => { video.currentTime = 0.01; }, { once: true });
+  video.closest('.service-card').addEventListener('pointerenter', () => {
+    if (window.matchMedia('(pointer: fine)').matches) video.play().catch(() => {});
+  });
+  video.closest('.service-card').addEventListener('pointerleave', () => {
+    video.pause();
+    video.currentTime = 0.01;
+  });
+});
+
 if (mobileProject && contact && 'IntersectionObserver' in window) {
   const contactObserver = new IntersectionObserver(([entry]) => {
     contactVisible = entry.isIntersecting;
