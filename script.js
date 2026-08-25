@@ -16,6 +16,26 @@ if ('IntersectionObserver' in window) {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const header = document.querySelector('.site-header');
+const mobileProject = document.querySelector('.mobile-project');
+const contact = document.querySelector('#contact');
+let contactVisible = false;
+const updateHeader = () => {
+  header.classList.toggle('is-scrolled', window.scrollY > 44);
+  if (mobileProject) mobileProject.classList.toggle('is-visible', !contactVisible && window.scrollY > 260);
+};
+
+window.addEventListener('scroll', updateHeader, { passive: true });
+updateHeader();
+
+if (mobileProject && contact && 'IntersectionObserver' in window) {
+  const contactObserver = new IntersectionObserver(([entry]) => {
+    contactVisible = entry.isIntersecting;
+    updateHeader();
+  }, { threshold: 0.12 });
+  contactObserver.observe(contact);
+}
+
 const heroMedia = document.querySelector('.hero-media');
 const motionOK = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
