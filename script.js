@@ -29,6 +29,9 @@ window.addEventListener('scroll', updateHeader, { passive: true });
 updateHeader();
 
 document.querySelectorAll('.hover-video').forEach((video) => {
+  video.muted = true;
+  video.defaultMuted = true;
+  video.volume = 0;
   video.addEventListener('loadedmetadata', () => { video.currentTime = 0.01; }, { once: true });
   video.closest('.service-card').addEventListener('pointerenter', () => {
     if (window.matchMedia('(pointer: fine)').matches) video.play().catch(() => {});
